@@ -393,7 +393,7 @@ namespace GDG.SharePoint.ADOProvider.WinFormsMiniErpDapper
                 lookupOrdini.Clear();
                 lookupProdotti.Clear();
                 foreach (Ordine o in dati.CaricaOrdini(nessunFiltro)) lookupOrdini[o.ID] = o.Title;
-                foreach (Prodotto pr in dati.CaricaProdotti(nessunFiltro)) lookupProdotti[pr.ID] = pr.Code;
+                foreach (Prodotto pr in dati.CaricaProdotti(nessunFiltro)) lookupProdotti[pr.ID] = pr.Title;
                 bsDati.DataSource = new BindingList<RigaOrdine>(dati.CaricaRigheOrdine(filtri));
             }
             else if (TipoLista() == 0)
