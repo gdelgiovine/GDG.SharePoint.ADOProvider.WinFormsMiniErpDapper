@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworks>net48;net8.0-windows;net10.0-windows</TargetFrameworks>
+    <UseWindowsForms>true</UseWindowsForms>
+    <AssemblyName>GDG.SharePoint.ADOProvider.WinFormsMiniErpDapper</AssemblyName>
+    <RootNamespace>GDG.SharePoint.ADOProvider.WinFormsMiniErpDapper</RootNamespace>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include=".github\copilot-instructions.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="GDG.SharePoint.ADOProvider" Version="1.0.2-rc.1" />
+    <PackageReference Include="Dapper" Version="2.1.89" />
+    <PackageReference Include="Microsoft.Identity.Client" Version="4.87.0" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.4258.31" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Shared\BrowserLoginForm.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="Shared\BrowserLoginForm.Designer.cs"><DependentUpon>BrowserLoginForm.cs</DependentUpon></Compile>
+    <Compile Update="Shared\ConnectionManagerForm.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="Shared\ConnectionManagerForm.Designer.cs"><DependentUpon>ConnectionManagerForm.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="Shared\ConnectionManagerForm.resx"><DependentUpon>ConnectionManagerForm.cs</DependentUpon></EmbeddedResource>
+    <Compile Update="MainForm.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="MainForm.Designer.cs"><DependentUpon>MainForm.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="MainForm.resx"><DependentUpon>MainForm.cs</DependentUpon></EmbeddedResource>
+    <Compile Update="EditForm.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="EditForm.Designer.cs"><DependentUpon>EditForm.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="EditForm.resx"><DependentUpon>EditForm.cs</DependentUpon></EmbeddedResource>
+    <Compile Update="AttachmentsForm.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="AttachmentsForm.Designer.cs"><DependentUpon>AttachmentsForm.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="AttachmentsForm.resx"><DependentUpon>AttachmentsForm.cs</DependentUpon></EmbeddedResource>
+  </ItemGroup>
+</Project>
