@@ -196,10 +196,6 @@ PublishScripts/
 *.nupkg
 # NuGet Symbol Packages
 *.snupkg
-# Keep the provider package shipped with this repository.
-!local-packages/
-!local-packages/*.nupkg
-!local-packages/*.snupkg
 # The packages folder can be ignored because of Package Restore
 **/[Pp]ackages/*
 # except build/, which is used as an MSBuild target.

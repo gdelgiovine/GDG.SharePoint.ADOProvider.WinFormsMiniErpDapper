@@ -1,5 +1,7 @@
 # MiniERP Dapper — Entity Model, mapping e WinForms
 
+I packages NUGET non sono intenzionalmente inclusi nel repository. Per averli inviate una email a gabriele@gabrieledelgiovine.it.
+
 Terza variante didattica del MiniERP: **Dapper + Model C#** su `GDG.SharePoint.ADOProvider`.
 Progetto indipendente, WinForms `net48;net8.0-windows;net10.0-windows`. Le versioni originale e Classic
 restano intatte.
