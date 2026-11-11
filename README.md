@@ -1,6 +1,7 @@
 # MiniERP Dapper — Entity Model, mapping e WinForms
 
 I packages NUGET sono inclusi nel repository. Fatene buon uso e non rubateli.
+<br>
 (c) 2026 Gabriele Del Giovine. 
 Il codice di esempio ed il Provider ADO.NET GDG.SP.ADOProvider sono una proprietà intellettuale protetta 
 di Gabriele Del Giovine. Sono concessi in licenza d'uso esclusivamente per uso dimostrativo.
